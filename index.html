@@ -22,228 +22,29 @@
             <div class="col-md-3">
                 <div class="d-flex flex-row justify-content-center">
                     <p>Increase Currency</p>
-                    <button type="button" class="btn btn-primary ml-3"><i class="mdi mdi-cash"></i></button>
+                    <button type="button" class="btn btn-primary ml-3" onclick="app.plantsController.getRich()"><i
+                            class="mdi mdi-cash"></i></button>
                 </div>
             </div>
             <div class="col-md-3">
-                <p>Balance Available: $0</p>
+                <p>Balance Available: $<span id="money"></span></p>
             </div>
             <div class="col-md-3">
-                <button type="button" class="btn btn-secondary"><i class="mdi mdi-cart"></i></button>
+                <button type="button" class="btn btn-secondary"><i class="mdi mdi-cart"></i><span
+                        id="cartTotal"></span></button>
             </div>
         </div>
     </header>
     <main class="container-fluid">
         <div id="app"></div>
-        <div class="row justify-content-around">
-            <div class="col-md-2 m-2 p-0">
-                <div class="bg-secondary rounded">
-                    <div>
-                        <img class="plant-img rounded-top"
-                            src="https://images.unsplash.com/photo-1525498128493-380d1990a112?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-                            alt="Monstera">
-                    </div>
-                    <div>
-                        <div class="pl-3">
-                            <h2>Monstera</h2>
-                            <p>Price: $5</p>
-                            <p><small>This is a Monstera plant</small></p>
-                        </div>
-                        <div class="d-flex justify-content-around pb-2">
-                            <p>In Stock: 100</p>
-                            <button type="button" class="btn btn-primary">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2 m-2 p-0">
-                <div class="bg-secondary rounded">
-                    <div>
-                        <img class="plant-img rounded-top"
-                            src="https://images.unsplash.com/photo-1525498128493-380d1990a112?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-                            alt="Monstera">
-                    </div>
-                    <div>
-                        <div class="pl-3">
-                            <h2>Monstera</h2>
-                            <p>Price: $5</p>
-                            <p><small>This is a Monstera plant</small></p>
-                        </div>
-                        <div class="d-flex justify-content-around pb-2">
-                            <p>In Stock: 100</p>
-                            <button type="button" class="btn btn-primary">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2 m-2 p-0">
-                <div class="bg-secondary rounded">
-                    <div>
-                        <img class="plant-img rounded-top"
-                            src="https://images.unsplash.com/photo-1525498128493-380d1990a112?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-                            alt="Monstera">
-                    </div>
-                    <div>
-                        <div class="pl-3">
-                            <h2>Monstera</h2>
-                            <p>Price: $5</p>
-                            <p><small>This is a Monstera plant</small></p>
-                        </div>
-                        <div class="d-flex justify-content-around pb-2">
-                            <p>In Stock: 100</p>
-                            <button type="button" class="btn btn-primary">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2 m-2 p-0">
-                <div class="bg-secondary rounded">
-                    <div>
-                        <img class="plant-img rounded-top"
-                            src="https://images.unsplash.com/photo-1525498128493-380d1990a112?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-                            alt="Monstera">
-                    </div>
-                    <div>
-                        <div class="pl-3">
-                            <h2>Monstera</h2>
-                            <p>Price: $5</p>
-                            <p><small>This is a Monstera plant</small></p>
-                        </div>
-                        <div class="d-flex justify-content-around pb-2">
-                            <p>In Stock: 100</p>
-                            <button type="button" class="btn btn-primary">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2 m-2 p-0">
-                <div class="bg-secondary rounded">
-                    <div>
-                        <img class="plant-img rounded-top"
-                            src="https://images.unsplash.com/photo-1525498128493-380d1990a112?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-                            alt="Monstera">
-                    </div>
-                    <div>
-                        <div class="pl-3">
-                            <h2>Monstera</h2>
-                            <p>Price: $5</p>
-                            <p><small>This is a Monstera plant</small></p>
-                        </div>
-                        <div class="d-flex justify-content-around pb-2">
-                            <p>In Stock: 100</p>
-                            <button type="button" class="btn btn-primary">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2 m-2 p-0">
-                <div class="bg-secondary rounded">
-                    <div>
-                        <img class="plant-img rounded-top"
-                            src="https://images.unsplash.com/photo-1525498128493-380d1990a112?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-                            alt="Monstera">
-                    </div>
-                    <div>
-                        <div class="pl-3">
-                            <h2>Monstera</h2>
-                            <p>Price: $5</p>
-                            <p><small>This is a Monstera plant</small></p>
-                        </div>
-                        <div class="d-flex justify-content-around pb-2">
-                            <p>In Stock: 100</p>
-                            <button type="button" class="btn btn-primary">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2 m-2 p-0">
-                <div class="bg-secondary rounded">
-                    <div>
-                        <img class="plant-img rounded-top"
-                            src="https://images.unsplash.com/photo-1525498128493-380d1990a112?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-                            alt="Monstera">
-                    </div>
-                    <div>
-                        <div class="pl-3">
-                            <h2>Monstera</h2>
-                            <p>Price: $5</p>
-                            <p><small>This is a Monstera plant</small></p>
-                        </div>
-                        <div class="d-flex justify-content-around pb-2">
-                            <p>In Stock: 100</p>
-                            <button type="button" class="btn btn-primary">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2 m-2 p-0">
-                <div class="bg-secondary rounded">
-                    <div>
-                        <img class="plant-img rounded-top"
-                            src="https://images.unsplash.com/photo-1525498128493-380d1990a112?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-                            alt="Monstera">
-                    </div>
-                    <div>
-                        <div class="pl-3">
-                            <h2>Monstera</h2>
-                            <p>Price: $5</p>
-                            <p><small>This is a Monstera plant</small></p>
-                        </div>
-                        <div class="d-flex justify-content-around pb-2">
-                            <p>In Stock: 100</p>
-                            <button type="button" class="btn btn-primary">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2 m-2 p-0">
-                <div class="bg-secondary rounded">
-                    <div>
-                        <img class="plant-img rounded-top"
-                            src="https://images.unsplash.com/photo-1525498128493-380d1990a112?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-                            alt="Monstera">
-                    </div>
-                    <div>
-                        <div class="pl-3">
-                            <h2>Monstera</h2>
-                            <p>Price: $5</p>
-                            <p><small>This is a Monstera plant</small></p>
-                        </div>
-                        <div class="d-flex justify-content-around pb-2">
-                            <p>In Stock: 100</p>
-                            <button type="button" class="btn btn-primary">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2 m-2 p-0">
-                <div class="bg-secondary rounded">
-                    <div>
-                        <img class="plant-img rounded-top"
-                            src="https://images.unsplash.com/photo-1525498128493-380d1990a112?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-                            alt="Monstera">
-                    </div>
-                    <div>
-                        <div class="pl-3">
-                            <h2>Monstera</h2>
-                            <p>Price: $5</p>
-                            <p><small>This is a Monstera plant</small></p>
-                        </div>
-                        <div class="d-flex justify-content-around pb-2">
-                            <p>In Stock: 100</p>
-                            <button type="button" class="btn btn-primary">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="row justify-content-around" id="plants">
         </div>
     </main>
     <footer class="bg-dark text-light">
         <div class="text-center">
-            <p><small>Made with love by Codeworks</small></p>
+            <p><small>Made with love by Sherene & Holli</small></p>
         </div>
     </footer>
-
     <script src="app/main.js" type="module"></script>
 </body>
 
