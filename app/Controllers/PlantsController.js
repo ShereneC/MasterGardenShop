@@ -8,6 +8,7 @@ function _draw() {
   document.getElementById('plants').innerHTML = template
   document.getElementById('money').innerText = ProxyState.money.toString()
   document.getElementById('cartTotal').innerText = ProxyState.cartTotal.toString()
+  document.getElementById('cartMoney').innerText = ProxyState.cartMoney.toString()
 }
 export default class PlantsController {
   constructor() {
@@ -20,6 +21,10 @@ export default class PlantsController {
 
   getRich() {
     plantsService.getRich()
+    _draw()
+  }
+  checkout() {
+    plantsService.checkout()
     _draw()
   }
 }

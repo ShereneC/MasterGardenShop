@@ -11,6 +11,7 @@ class AppState extends EventEmitter {
   ]
   money = 1000
   cartTotal = 0
+  cartMoney = 0
 }
 
 // IGNORE THIS
